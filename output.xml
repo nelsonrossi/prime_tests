@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211028 04:30:34.361" rpa="false" schemaversion="2">
+<suite id="s1" name="Robot Comandos De Linha" source="c:\prime tests\prime_tests\robot_comandos_de_linha">
+<suite id="s1-s1" name="Teste" source="c:\prime tests\prime_tests\robot_comandos_de_linha\teste.robot">
+<test id="s1-s1-t1" name="Cenário 3: recebendo um valor pelo terminal">
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n\nOlá ${valor_do_terminal}!!\n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211028 04:30:34.426" level="TRACE">Arguments: [ '\n\nOlá Batma com trace!!\n' ]</msg>
+<msg timestamp="20211028 04:30:34.427" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211028 04:30:34.426" endtime="20211028 04:30:34.428"/>
+</kw>
+<tag>recebendo_valor</tag>
+<status status="PASS" starttime="20211028 04:30:34.425" endtime="20211028 04:30:34.428"/>
+</test>
+<status status="PASS" starttime="20211028 04:30:34.419" endtime="20211028 04:30:34.431"/>
+</suite>
+<status status="PASS" starttime="20211028 04:30:34.365" endtime="20211028 04:30:34.433"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">recebendo_valor</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Comandos De Linha">Robot Comandos De Linha</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Teste">Robot Comandos De Linha.Teste</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
