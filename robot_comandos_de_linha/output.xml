@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211030 04:39:30.934" rpa="false" schemaversion="2">
+<suite id="s1" name="Teste Argumento" source="C:\prime tests\prime_tests\argumentos\teste_argumento.robot">
+<test id="s1-t1" name="Cenário: criando email por argumentos embutidos">
+<kw name="Dado que eu recebo o nome &quot;Nelson&quot; sobrenome &quot;Manzatto&quot; e idade &quot;35&quot;">
+<msg timestamp="20211030 04:39:31.003" level="FAIL">No keyword with name 'Dado que eu recebo o nome "Nelson" sobrenome "Manzatto" e idade "35"' found.</msg>
+<status status="FAIL" starttime="20211030 04:39:31.003" endtime="20211030 04:39:31.003"/>
+</kw>
+<kw name="Quando monto o meu email">
+<status status="NOT RUN" starttime="20211030 04:39:31.008" endtime="20211030 04:39:31.008"/>
+</kw>
+<kw name="Então imprimo o meu novo email">
+<status status="NOT RUN" starttime="20211030 04:39:31.008" endtime="20211030 04:39:31.008"/>
+</kw>
+<status status="FAIL" starttime="20211030 04:39:30.998" endtime="20211030 04:39:31.008">No keyword with name 'Dado que eu recebo o nome "Nelson" sobrenome "Manzatto" e idade "35"' found.</status>
+</test>
+<status status="FAIL" starttime="20211030 04:39:30.937" endtime="20211030 04:39:31.013"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Teste Argumento">Teste Argumento</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20211030 04:39:30.993" level="ERROR">Error in file 'C:\prime tests\prime_tests\argumentos\teste_argumento.robot' on line 2: Resource file '.esource.robot' does not exist.</msg>
+</errors>
+</robot>

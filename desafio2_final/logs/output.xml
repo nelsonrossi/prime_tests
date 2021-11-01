@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211101 03:12:09.746" rpa="false" schemaversion="2">
+<suite id="s1" name="Desafio2 Final" source="C:\prime tests\prime_tests\desafio2_final">
+<suite id="s1-s1" name="Teste Desafio2" source="C:\prime tests\prime_tests\desafio2_final\teste_desafio2.robot">
+<test id="s1-s1-t1" name="Caso de Teste 03: Listar Produtos">
+<kw name="abrir o navegador" library="resource" type="SETUP">
+<msg timestamp="20211101 03:12:10.255" level="TRACE">Arguments: [  ]</msg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211101 03:12:10.255" level="TRACE">Arguments: [ browser='chrome' ]</msg>
+<msg timestamp="20211101 03:12:10.255" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg timestamp="20211101 03:12:10.860" level="DEBUG">POST http://localhost:56380/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}</msg>
+<msg timestamp="20211101 03:12:10.860" level="DEBUG">Starting new HTTP connection (1): localhost:56380</msg>
+<msg timestamp="20211101 03:12:12.332" level="DEBUG">http://localhost:56380 "POST /session HTTP/1.1" 200 789</msg>
+<msg timestamp="20211101 03:12:12.333" level="DEBUG">Finished Request</msg>
+<msg timestamp="20211101 03:12:12.334" level="DEBUG">POST http://localhost:56380/session/d3eafb41aa68ae6846c3220fd4ca5f7a/timeouts {"script": 5000}</msg>
+<msg timestamp="20211101 03:12:12.336" level="DEBUG">http://localhost:56380 "POST /session/d3eafb41aa68ae6846c3220fd4ca5f7a/timeouts HTTP/1.1" 200 14</msg>
+<msg timestamp="20211101 03:12:12.337" level="DEBUG">Finished Request</msg>
+<msg timestamp="20211101 03:12:12.337" level="DEBUG">POST http://localhost:56380/session/d3eafb41aa68ae6846c3220fd4ca5f7a/timeouts {"implicit": 0}</msg>
+<msg timestamp="20211101 03:12:12.340" level="DEBUG">http://localhost:56380 "POST /session/d3eafb41aa68ae6846c3220fd4ca5f7a/timeouts HTTP/1.1" 200 14</msg>
+<msg timestamp="20211101 03:12:12.341" level="DEBUG">Finished Request</msg>
+<msg timestamp="20211101 03:12:12.341" level="DEBUG">Opened browser with session id d3eafb41aa68ae6846c3220fd4ca5f7a.</msg>
+<msg timestamp="20211101 03:12:12.341" level="TRACE">Return: 1</msg>
+<status status="PASS" starttime="20211101 03:12:10.255" endtime="20211101 03:12:12.341"/>
+</kw>
+<msg timestamp="20211101 03:12:12.342" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211101 03:12:10.254" endtime="20211101 03:12:12.342"/>
+</kw>
+<kw name="Acessar a página home do site" library="resource">
+<doc>keyword responsável por abrir o site que será automatizado</doc>
+<msg timestamp="20211101 03:12:12.343" level="TRACE">Arguments: [  ]</msg>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20211101 03:12:12.343" level="TRACE">Arguments: [ 'http://automationpractice.com/index.php' ]</msg>
+<msg timestamp="20211101 03:12:12.344" level="INFO">Opening url 'http://automationpractice.com/index.php'</msg>
+<msg timestamp="20211101 03:12:12.344" level="DEBUG">POST http://localhost:56380/session/d3eafb41aa68ae6846c3220fd4ca5f7a/url {"url": "http://automationpractice.com/index.php"}</msg>
+<msg timestamp="20211101 03:12:18.444" level="DEBUG">http://localhost:56380 "POST /session/d3eafb41aa68ae6846c3220fd4ca5f7a/url HTTP/1.1" 200 14</msg>
+<msg timestamp="20211101 03:12:18.445" level="DEBUG">Finished Request</msg>
+<msg timestamp="20211101 03:12:18.445" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211101 03:12:12.343" endtime="20211101 03:12:18.445"/>
+</kw>
+<msg timestamp="20211101 03:12:18.445" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211101 03:12:12.342" endtime="20211101 03:12:18.446"/>
+</kw>
+<kw name="Passar o mouse por cima da categoria Women no menu principal superior de categorias" library="resource">
+<msg timestamp="20211101 03:12:18.447" level="TRACE">Arguments: [  ]</msg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${button_women}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<msg timestamp="20211101 03:12:18.449" level="TRACE">Arguments: [ {'//a[@title': "'Women']"} ]</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211101 03:12:18.450" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20211101 03:12:18.453" level="DEBUG">GET http://localhost:56380/session/d3eafb41aa68ae6846c3220fd4ca5f7a/screenshot {}</msg>
+<msg timestamp="20211101 03:12:18.887" level="DEBUG">http://localhost:56380 "GET /session/d3eafb41aa68ae6846c3220fd4ca5f7a/screenshot HTTP/1.1" 200 669156</msg>
+<msg timestamp="20211101 03:12:18.891" level="DEBUG">Finished Request</msg>
+<msg timestamp="20211101 03:12:18.900" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20211101 03:12:18.900" level="TRACE">Return: 'C:\\prime tests\\prime_tests\\desafio2_final\\logs\\selenium-screenshot-14.png'</msg>
+<status status="PASS" starttime="20211101 03:12:18.449" endtime="20211101 03:12:18.900"/>
+</kw>
+<msg timestamp="20211101 03:12:18.926" level="FAIL">TypeError: expected string or bytes-like object</msg>
+<msg timestamp="20211101 03:12:18.926" level="DEBUG">Traceback (most recent call last):
+  File "C:\Users\Nelson\AppData\Local\Programs\Python\Python310\lib\site-packages\SeleniumLibrary\__init__.py", line 492, in run_keyword
+    return DynamicCore.run_keyword(self, name, args, kwargs)
+  File "C:\Users\Nelson\AppData\Local\Programs\Python\Python310\lib\site-packages\robotlibcore.py", line 94, in run_keyword
+    return self.keywords[name](*args, **(kwargs or {}))
+  File "C:\Users\Nelson\AppData\Local\Programs\Python\Python310\lib\site-packages\SeleniumLibrary\keywords\waiting.py", line 314, in wait_until_element_is_visible
+    self._wait_until(
+  File "C:\Users\Nelson\AppData\Local\Programs\Python\Python310\lib\site-packages\SeleniumLibrary\keywords\waiting.py", line 426, in _wait_until
+    self._wait_until_worker(condition, timeout, error)
+  File "C:\Users\Nelson\AppData\Local\Programs\Python\Python310\lib\site-packages\SeleniumLibrary\keywords\waiting.py", line 433, in _wait_until_worker
+    if condition():
+  File "C:\Users\Nelson\AppData\Local\Programs\Python\Python310\lib\site-packages\SeleniumLibrary\keywords\waiting.py", line 315, in &lt;lambda&gt;
+    lambda: self.is_visible(locator),
+  File "C:\Users\Nelson\AppData\Local\Programs\Python\Python310\lib\site-packages\SeleniumLibrary\base\context.py", line 111, in is_visible
+    element = self.find_element(locator, required=False)
+  File "C:\Users\Nelson\AppData\Local\Programs\Python\Python310\lib\site-packages\SeleniumLibrary\base\context.py", line 82, in find_element
+    return self.element_finder.find(locator, tag, True, required, parent)
+  File "C:\Users\Nelson\AppData\Local\Programs\Python\Python310\lib\site-packages\SeleniumLibrary\locators\elementfinder.py", line 92, in find
+    return self._find(locators[-1], tag, first_only, required, element)
+  File "C:\Users\Nelson\AppData\Local\Programs\Python\Python310\lib\site-packages\SeleniumLibrary\locators\elementfinder.py", line 119, in _find
+    prefix, criteria = self._parse_locator(locator)
+  File "C:\Users\Nelson\AppData\Local\Programs\Python\Python310\lib\site-packages\SeleniumLibrary\locators\elementfinder.py", line 303, in _parse_locator
+    if re.match(r"\(*//", locator):
+  File "C:\Users\Nelson\AppData\Local\Programs\Python\Python310\lib\re.py", line 190, in match
+    return _compile(pattern, flags).match(string)</msg>
+<status status="FAIL" starttime="20211101 03:12:18.448" endtime="20211101 03:12:18.926"/>
+</kw>
+<status status="FAIL" starttime="20211101 03:12:18.446" endtime="20211101 03:12:18.929"/>
+</kw>
+<status status="FAIL" starttime="20211101 03:12:10.252" endtime="20211101 03:12:18.931">TypeError: expected string or bytes-like object</status>
+</test>
+<status status="FAIL" starttime="20211101 03:12:09.803" endtime="20211101 03:12:18.937"/>
+</suite>
+<status status="FAIL" starttime="20211101 03:12:09.749" endtime="20211101 03:12:18.945"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Desafio2 Final">Desafio2 Final</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Teste Desafio2">Desafio2 Final.Teste Desafio2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

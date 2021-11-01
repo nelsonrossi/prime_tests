@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211029 03:42:07.352" rpa="false" schemaversion="2">
+<suite id="s1" name="Variaveis1" source="c:\prime tests\prime_tests\variaveis1">
+<suite id="s1-s1" name="Teste Variaveis1" source="c:\prime tests\prime_tests\variaveis1\teste_variaveis1.robot">
+<test id="s1-s1-t1" name="Cenário 1: imprimir as informaçõs das pessoas tipo dicionário">
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n${pessoa.nome}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211029 03:42:07.417" endtime="20211029 03:42:07.419"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${pessoa.sobrenome}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211029 03:42:07.420" endtime="20211029 03:42:07.421"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${pessoa.idade}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211029 03:42:07.422" endtime="20211029 03:42:07.423"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${pessoa.sexo}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211029 03:42:07.424" endtime="20211029 03:42:07.425"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${pessoa.cidade}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211029 03:42:07.426" endtime="20211029 03:42:07.427"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${pessoa.fone}\n</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211029 03:42:07.428" endtime="20211029 03:42:07.429"/>
+</kw>
+<status status="PASS" starttime="20211029 03:42:07.416" endtime="20211029 03:42:07.430"/>
+</test>
+<test id="s1-s1-t2" name="Cenário 2: imprimir frutas tipo lista">
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n${frutas.[0]}</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211029 03:42:07.435" level="FAIL">Resolving variable '${frutas.[0]}' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</msg>
+<status status="FAIL" starttime="20211029 03:42:07.432" endtime="20211029 03:42:07.435"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${frutas.[1]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20211029 03:42:07.436" endtime="20211029 03:42:07.436"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${frutas.[2]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20211029 03:42:07.436" endtime="20211029 03:42:07.436"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${frutas.[3]}\n</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20211029 03:42:07.437" endtime="20211029 03:42:07.437"/>
+</kw>
+<status status="FAIL" starttime="20211029 03:42:07.431" endtime="20211029 03:42:07.437">Resolving variable '${frutas.[0]}' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</status>
+</test>
+<status status="FAIL" starttime="20211029 03:42:07.410" endtime="20211029 03:42:07.440"/>
+</suite>
+<status status="FAIL" starttime="20211029 03:42:07.356" endtime="20211029 03:42:07.443"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" skip="0" id="s1" name="Variaveis1">Variaveis1</stat>
+<stat pass="1" fail="1" skip="0" id="s1-s1" name="Teste Variaveis1">Variaveis1.Teste Variaveis1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
