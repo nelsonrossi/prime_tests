@@ -4,10 +4,10 @@ Library     SeleniumLibrary
 
 ***Variables***
 ${url}                  http://automationpractice.com/index.php
-&{button_women}         //a[@title='Women']
-# &{summer_dresses}       //*[@id="block_top_menu"]/ul/li[1]/ul/li[2]/ul/li[3]/a
-# ...             icone_de_busca=//input[@id="search_query_top"]/following-sibling::button[@type='submit']
-# &{produtos}     novabusca=//a[text="No results were found for your search&nbsp;"itemNãoExistente"]
+${button_women}         //a[@title='Women']
+${summer_dresses}       //*[@id="block_top_menu"]/ul/li[1]/ul/li[2]/ul/li[3]/a
+${subcategoria}         //*[@id="center_column"]/h1/span[1]
+
 
 ***Keywords***
 Acessar a página home do site   
@@ -16,26 +16,19 @@ Acessar a página home do site
     
 Passar o mouse por cima da categoria Women no menu principal superior de categorias
     Wait Until Element Is Visible      ${button_women}
-    # Mouse Over                         ${button_women}  
-#     Sleep  2s
-#     # Click Element           ${summer_dresses}
+    Mouse Over                         ${button_women}  
 
-# # # Digitar o nome do produto "${produto}" no campo de pesquisa
-# #     Wait Until Element Is Visible       ${Home.campo_de_busca}
-# #     Input Text                          ${Home.campo_de_busca}  ${produto}  
+Clicar na sub categoria "Summer Dresses"
+    Click Element                      ${summer_dresses}
 
-# # Clicar no botão pesquisar
-# #     Wait Until Element Is Visible     ${Home.icone_de_busca}
-# #     Click Element                     ${Home.icone_de_busca}
-
-# # Conferir mensagem "${mensagem_esperada}"
-# #     Page Should Contain  ${mensagem_esperada}
-    
+Conferir se os produtos da sub-categoria "Summer Dresses" foram mostrados na página
+    Wait Until Element Is Visible   ${subcategoria}
+    Element Should Be Visible       ${subcategoria}
 
   
 abrir o navegador
     Open Browser  browser=chrome
 
-# fechar o navegador
-#     Close Browser
+fechar o navegador
+    Close Browser
 
